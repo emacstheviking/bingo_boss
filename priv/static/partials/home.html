@@ -1,0 +1,47 @@
+<div ng-controller="BingoController">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="#">Bibber*Bingo!</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+	<form class="navbar-form navbar-left">
+	  <button type="button" class="btn btn-danger" ng-click="newGame()">New Game</button>
+	  <button type="button" class="btn btn-danger" ng-click="toggleAutoGame()" ng-disabled="remaining==0">{{autoPlayLabel}}</button>
+	</form>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+   <div class="container">
+    <div class="row" style="margin-top:30px; background-color: white">
+      <div class="col-md-5">
+	<div id="number" style="text-align:center; color: #246; font-size:300px; font-weight: bold; width:400px;">{{currentNumber}}
+	  <br/>
+	  <div class="well" style="margin-top: 20px; color: black; font-size:30px">
+	    Last Ball: {{lastNumber}}
+	    <br/>
+	    Balls left: {{remaining}}
+	  </div>
+	  <button type="button" ng-hide="remaining==0" class="btn btn-large btn-success btn-block" style="" ng-click="nextNumber()" ng-disabled="inProgress">
+	    <b>Call a Ball</b>
+	  </button>
+	</div>
+      </div>
+      <div class="col-md-7">
+	<div id="number" style="margin-left:50px; text-align:center;background-color: white; font-size:50px; width:400px;">
+	</div>
+	<h3>Click to hear ball value when confirming a win.</h3>
+	<div style="display:inline-block; padding: 10px; font-size: 30px; 0px;border-radius: 35px 35px 35px 35px; text-align:center;
+		    border: 5px solid black; background-color:red; color:white;font-weight:bold;margin:5px;width:70px;height:70px" 
+	     ng-repeat="n in calledNumbers">
+	  <a ng-click="buttonCall($index);" style="color:white">{{n}}</a>
+	</div>
+      </div>
+    </div>
+</div>

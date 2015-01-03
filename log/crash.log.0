@@ -1,0 +1,410 @@
+2014-12-27 21:58:40 =ERROR REPORT====
+GET /bingo/speak/80 [bingo_boss] 404 0ms2014-12-27 22:03:04 =SUPERVISOR REPORT====
+     Supervisor: {<0.109.0>,poolboy_sup}
+     Context:    shutdown_error
+     Reason:     shutdown
+     Offender:   [{nb_children,11},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2014-12-27 22:04:07 =SUPERVISOR REPORT====
+     Supervisor: {<0.109.0>,poolboy_sup}
+     Context:    shutdown_error
+     Reason:     shutdown
+     Offender:   [{nb_children,3},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2014-12-27 22:15:24 =ERROR REPORT====
+GET /admin [bingo_boss] 404 0ms2014-12-27 22:17:11 =SUPERVISOR REPORT====
+     Supervisor: {<0.109.0>,poolboy_sup}
+     Context:    shutdown_error
+     Reason:     shutdown
+     Offender:   [{nb_children,6},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2014-12-27 22:17:27 =ERROR REPORT====
+GET /admin [bingo_boss] 404 0ms2014-12-27 22:17:47 =ERROR REPORT====
+GET /admin [bingo_boss] 404 0ms2014-12-27 22:17:49 =ERROR REPORT====
+GET /admin [bingo_boss] 404 0ms2014-12-27 22:17:50 =ERROR REPORT====
+GET /admin [bingo_boss] 404 0ms2014-12-27 22:17:50 =ERROR REPORT====
+GET /admin [bingo_boss] 404 0ms2014-12-27 22:18:13 =ERROR REPORT====
+GET /admin [bingo_boss] 404 0ms2014-12-27 22:18:14 =ERROR REPORT====
+GET /admin [bingo_boss] 404 0ms2014-12-27 22:18:20 =SUPERVISOR REPORT====
+     Supervisor: {<0.109.0>,poolboy_sup}
+     Context:    shutdown_error
+     Reason:     shutdown
+     Offender:   [{nb_children,4},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2014-12-27 22:33:19 =SUPERVISOR REPORT====
+     Supervisor: {<0.109.0>,poolboy_sup}
+     Context:    shutdown_error
+     Reason:     shutdown
+     Offender:   [{nb_children,4},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2014-12-27 22:39:27 =ERROR REPORT====
+Ranch listener boss_http_listener had connection process started with cowboy_protocol:start_link/4 at <0.351.0> exit with reason: killed
+2014-12-27 22:39:27 =ERROR REPORT====
+Ranch listener boss_http_listener had connection process started with cowboy_protocol:start_link/4 at <0.358.0> exit with reason: killed
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.168.0>},{name,{acceptor,<0.165.0>,3}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.170.0>},{name,{acceptor,<0.165.0>,5}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.173.0>},{name,{acceptor,<0.165.0>,8}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.175.0>},{name,{acceptor,<0.165.0>,10}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.166.0>},{name,{acceptor,<0.165.0>,1}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.174.0>},{name,{acceptor,<0.165.0>,9}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.167.0>},{name,{acceptor,<0.165.0>,2}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.171.0>},{name,{acceptor,<0.165.0>,6}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.172.0>},{name,{acceptor,<0.165.0>,7}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.169.0>},{name,{acceptor,<0.165.0>,4}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.263.0>},{name,{acceptor,<0.165.0>,98}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown
+     Reason:     reached_max_restart_intensity
+     Offender:   [{pid,<0.263.0>},{name,{acceptor,<0.165.0>,98}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.264.0>},{name,{acceptor,<0.165.0>,99}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.262.0>},{name,{acceptor,<0.165.0>,97}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.261.0>},{name,{acceptor,<0.165.0>,96}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.260.0>},{name,{acceptor,<0.165.0>,95}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.259.0>},{name,{acceptor,<0.165.0>,94}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.258.0>},{name,{acceptor,<0.165.0>,93}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.257.0>},{name,{acceptor,<0.165.0>,92}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.256.0>},{name,{acceptor,<0.165.0>,91}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.255.0>},{name,{acceptor,<0.165.0>,90}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.254.0>},{name,{acceptor,<0.165.0>,89}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.253.0>},{name,{acceptor,<0.165.0>,88}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.252.0>},{name,{acceptor,<0.165.0>,87}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.251.0>},{name,{acceptor,<0.165.0>,86}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.250.0>},{name,{acceptor,<0.165.0>,85}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.249.0>},{name,{acceptor,<0.165.0>,84}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.247.0>},{name,{acceptor,<0.165.0>,82}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.246.0>},{name,{acceptor,<0.165.0>,81}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.245.0>},{name,{acceptor,<0.165.0>,80}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.244.0>},{name,{acceptor,<0.165.0>,79}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.243.0>},{name,{acceptor,<0.165.0>,78}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.242.0>},{name,{acceptor,<0.165.0>,77}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.241.0>},{name,{acceptor,<0.165.0>,76}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.240.0>},{name,{acceptor,<0.165.0>,75}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.239.0>},{name,{acceptor,<0.165.0>,74}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.238.0>},{name,{acceptor,<0.165.0>,73}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.237.0>},{name,{acceptor,<0.165.0>,72}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.236.0>},{name,{acceptor,<0.165.0>,71}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:27 =SUPERVISOR REPORT====
+     Supervisor: {<0.165.0>,ranch_acceptors_sup}
+     Context:    shutdown_error
+     Reason:     killed
+     Offender:   [{pid,<0.233.0>},{name,{acceptor,<0.165.0>,68}},{mfargs,{ranch_acceptor,start_link,[#Port<0.32632>,ranch_tcp,<0.164.0>]}},{restart_type,permanent},{shutdown,brutal_kill},{child_type,worker}]
+
+2014-12-27 22:39:28 =SUPERVISOR REPORT====
+     Supervisor: {<0.163.0>,ranch_listener_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.164.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_link,[boss_http_listener,worker,ranch_tcp,cowboy_protocol]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2014-12-27 22:39:40 =SUPERVISOR REPORT====
+     Supervisor: {<0.118.0>,poolboy_sup}
+     Context:    shutdown_error
+     Reason:     shutdown
+     Offender:   [{nb_children,2},{name,boss_session_controller},{mfargs,{boss_session_controller,start_link,[[{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,40},{adapter,boss_session_adapter_mock},{session_exp_time,525600},{session_key,"_boss_session"}]]}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2014-12-27 22:59:23 =ERROR REPORT====
+GET / [bingo_boss] 404 0ms2014-12-27 23:00:14 =ERROR REPORT====
+** Generic server <0.268.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,bingo_boss,["bingo_boss_bingo_controller"],45087,49184,53281}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-12-27 23:00:14 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.268.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,804}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.267.0>,boss_web,boss_sup,<0.92.0>]
+    messages: []
+    links: [<0.267.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 27
+    reductions: 18467
+  neighbours:
+2014-12-27 23:00:14 =SUPERVISOR REPORT====
+     Supervisor: {<0.267.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.268.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,bingo_boss},{controllers,["bingo_boss_bingo_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-12-27 23:00:35 =ERROR REPORT====
+** Generic server <0.451.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,bingo_boss,["bingo_boss_bingo_controller"],69665,73760,77855}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-12-27 23:00:35 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.451.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,804}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.267.0>,boss_web,boss_sup,<0.92.0>]
+    messages: []
+    links: [<0.267.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 3242
+  neighbours:
+2014-12-27 23:00:35 =SUPERVISOR REPORT====
+     Supervisor: {<0.267.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.451.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,bingo_boss},{controllers,["bingo_boss_bingo_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-12-27 23:00:36 =ERROR REPORT====
+** Generic server <0.455.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,bingo_boss,["bingo_boss_bingo_controller"],81951,86048,90145}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-12-27 23:00:36 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.455.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,804}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.267.0>,boss_web,boss_sup,<0.92.0>]
+    messages: []
+    links: [<0.267.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 3234
+  neighbours:
+2014-12-27 23:00:36 =SUPERVISOR REPORT====
+     Supervisor: {<0.267.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.455.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,bingo_boss},{controllers,["bingo_boss_bingo_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-12-27 23:01:03 =ERROR REPORT====
+** Generic server <0.459.0> terminating 
+** Last message in was {route,"/"}
+** When Server state == {state,bingo_boss,["bingo_boss_bingo_controller"],94241,98336,102431}
+** Reason for termination == 
+** {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+2014-12-27 23:01:03 =CRASH REPORT====
+  crasher:
+    initial call: boss_router_controller:init/1
+    pid: <0.459.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,804}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+    ancestors: [<0.267.0>,boss_web,boss_sup,<0.92.0>]
+    messages: []
+    links: [<0.267.0>]
+    dictionary: [{boss_environment,development}]
+    trap_exit: false
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 4339
+  neighbours:
+2014-12-27 23:01:03 =SUPERVISOR REPORT====
+     Supervisor: {<0.267.0>,boss_router_sup}
+     Context:    child_terminated
+     Reason:     {badarg,[{erlang,list_to_atom,[undefined],[]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,172}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]}
+     Offender:   [{pid,<0.459.0>},{name,router_controller},{mfargs,{boss_router_controller,start_link,[[{application,bingo_boss},{controllers,["bingo_boss_bingo_controller"]}]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]
+
+2014-12-27 23:01:37 =ERROR REPORT====
+GET / [bingo_boss] 404 0ms
